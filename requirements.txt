@@ -1,0 +1,11 @@
+torch
+matplotlib
+transformers
+tiktoken
+tqdm
+requests
+regex
+datasets
+pandas
+bs4
+langchain_community
