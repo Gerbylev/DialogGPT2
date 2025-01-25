@@ -23,6 +23,7 @@ if __name__ == "__main__":
     texts = [content for path in file_paths for content in [open(path, 'r', encoding='utf-8').read()]]
     texts.extend(wiki_dataset['text'])
     t1= time.time()
+    print(sum(len(s) for s in texts))
     delta = (t1 - t0) * 1000
     print(f"load time {delta:.2f}")
     os.makedirs("bpe/models", exist_ok=True)
